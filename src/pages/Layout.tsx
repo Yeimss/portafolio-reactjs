@@ -11,7 +11,7 @@ const Layout = () => {
     }
     return (
         <>
-            <nav className="py-4 px-4 bg-purple-100 border-b-1 border-purple-300 flex justify-between">
+            <header className="py-4 px-4 bg-purple-100 border-b-1 border-purple-300 flex justify-between">
                 <div>
                     <ul className="flex items-cente r gap-x-6">
                         <li className="flex items-center">
@@ -42,14 +42,15 @@ const Layout = () => {
                         </li>
                         <li>
                             <a href="https://www.instagram.com/james.h_no/" target="_blank" rel="noreferrer">
-                                <FaInstagram size={35} className="text-purple-400 hover:text-gradient-to-r hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600
-                    transition-all duration-300" />
+                                    <FaInstagram size={35} className="text-purple-400 hover:text-red-700" />
                             </a>
                         </li>
                     </ul>
                 </div>
-            </nav>  
-            <Outlet/>
+            </header>
+            <main className="p-4">
+                <Outlet/>
+            </main>
         </>
     )
 }
