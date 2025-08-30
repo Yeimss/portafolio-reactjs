@@ -36,7 +36,7 @@ const Portfolio = () => {
           <h1 className="text-2xl font-bold">Mi Portafolio</h1>
           <nav className="flex gap-4 text-xl">
             <a href="https://github.com/Yeimss" target="_blank" rel="noreferrer">
-              <FaGithub size={24} className="hover:text-gray-700" />
+              <FaGithub size={24}   className="hover:text-gray-700" />
             </a>
             <a href="https://www.linkedin.com/in/james-herreraa/" target="_blank" rel="noreferrer">
               <FaLinkedin size={24} className="hover:text-blue-700" />

@@ -1,15 +1,21 @@
-/* import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main' */
-import Portfolio from './components/PP'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './pages/Layout' 
+import Portafolio from './pages/Portafolio'
+import Games from './pages/Games'
+import ConsumingApis from './pages/ConsumingApis'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
     <>
-      {/* <Header></Header>
-      <Main />
-      <Footer></Footer> */}
-      <Portfolio></Portfolio>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route path='/' element={<Portafolio/>}/>
+          <Route path='/games' element={<Games/>}/>
+          <Route path='/APIs' element={<ConsumingApis/>}/>
+          <Route path='/*' element={<NotFound/>}/>
+        </Route>
+      </Routes>
     </>
   )
 }
