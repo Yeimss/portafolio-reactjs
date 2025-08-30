@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaReact } from "react-icons/fa"
-import { SiPython, SiReact } from "react-icons/si";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
+import { SiPython } from "react-icons/si";
 import dotNetIcon from '../../public/dot-net-svgrepo-com.svg' 
 import sqlIcon from '../../public/sql-database-generic-svgrepo-com.svg'
 import reactIcon from '../assets/react.svg'
