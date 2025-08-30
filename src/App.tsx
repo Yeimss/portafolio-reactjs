@@ -1,14 +1,15 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+import Main from './components/Main'
+import Portfolio from './components/PP'
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <main className='text-center py-10'>
-        James Yesid Herrera Acevedo
-      </main>
-      <Footer></Footer>
+      {/* <Header></Header>
+      <Main />
+      <Footer></Footer> */}
+      <Portfolio></Portfolio>
     </>
   )
 }
