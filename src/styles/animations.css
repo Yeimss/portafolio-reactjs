@@ -1,0 +1,34 @@
+@keyframes rotate-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.sping-slow{
+    animation: rotate-slow 5s linear infinite;
+}
+.sping-slow-hover:hover{
+    animation: rotate-slow 2s linear infinite;
+}
+.scale-up-center-hover:hover {
+    animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
+}

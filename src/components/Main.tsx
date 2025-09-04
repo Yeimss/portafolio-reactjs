@@ -1,8 +1,7 @@
-import BoardCard from "./utils/Card/BoardCard";
 const Main = () => {
     return (
         <main>
-            <BoardCard/>
+            guacho
         </main>
     )
 }
