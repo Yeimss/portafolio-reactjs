@@ -56,7 +56,7 @@ const Portafolio = () => {
                 </div>
             </section>
             
-            <section id="skills" className="bg-[#FFF8F0] py-16 px-4 border-t-2 border-[#F2CA94]">
+            <section id="skills" className="bg-[#FFF8F0] py-16 px-4 mt-3">
                 <h3 className="text-3xl font-bold text-center mb-10">Habilidades</h3>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto flex jusfity-between">
                     {MainSkills.map((element, index) => <SkillCard key={index} image={element.image} title={element.title} description={element.description} />)}
