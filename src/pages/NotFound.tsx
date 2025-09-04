@@ -7,20 +7,20 @@ const NotFound = () => {
     <main
       className="
         min-h-screen relative overflow-hidden
-        bg-gradient-to-b from-purple-50 via-white to-purple-50
+        bg-gradient-to-b from-stale-50 via-white to-stale-50
         dark:from-slate-900 dark:via-slate-950 dark:to-slate-900
         flex items-center justify-center px-6
       "
     >
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full blur-3xl opacity-30 bg-purple-300 dark:bg-purple-600" />
+        <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full blur-3xl opacity-30 bg-stale-300 dark:bg-stale-600" />
         <div className="absolute -bottom-24 -right-24 w-80 h-80 rounded-full blur-3xl opacity-30 bg-pink-300 dark:bg-pink-600" />
       </div>
 
       <section
         className="
           relative z-10 w-full max-w-xl
-          rounded-3xl border border-purple-200/60 dark:border-white/10
+          rounded-3xl border border-stale-200/60 dark:border-white/10
           bg-white/70 dark:bg-white/5 backdrop-blur-xl
           shadow-xl p-8 md:p-10 text-center
         "
@@ -33,8 +33,8 @@ const NotFound = () => {
           >
             <defs>
               <linearGradient id="ghostGradient" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0%" stopColor="#a78bfa" />
-                <stop offset="100%" stopColor="#f472b6" />
+                <stop offset="0%" stopColor="#F2CA94" />
+                <stop offset="100%" stopColor="#F7E3C6" />
               </linearGradient>
             </defs>
             <path
@@ -52,8 +52,8 @@ const NotFound = () => {
           className="
             text-6xl font-extrabold tracking-tight mb-2
             bg-clip-text text-transparent
-            bg-gradient-to-r from-purple-600 via-fuchsia-500 to-pink-500
-            dark:from-purple-300 dark:via-fuchsia-300 dark:to-pink-300
+            bg-gradient-to-r from-stale-600 via-orange-500 to-pink-500
+            dark:from-stale-300 dark:via-fuchsia-300 dark:to-pink-300
           "
         >
           404
@@ -70,8 +70,8 @@ const NotFound = () => {
             to="/"
             className="
               inline-flex items-center gap-2 px-5 py-2.5 rounded-xl
-              bg-gradient-to-r from-purple-600 to-pink-600 text-white
-              shadow-lg shadow-purple-500/20
+              bg-gradient-to-r from-orange-300 to-orange-600 text-white
+              shadow-lg shadow-stale-500/20
               hover:scale-[1.02] active:scale-[0.99]
               transition-transform
             "
@@ -96,7 +96,7 @@ const NotFound = () => {
             href="mailto:tu.email@dominio.com?subject=404%20en%20mi%20portafolio"
             className="
               inline-flex items-center gap-2 px-5 py-2.5 rounded-xl
-              text-purple-700 dark:text-purple-300
+              text-stale-700 dark:text-stale-300
               hover:underline
             "
           >

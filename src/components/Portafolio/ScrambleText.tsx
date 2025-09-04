@@ -21,7 +21,7 @@ const ScrambleText = ({ text , title}: { text: string, title:string }) => {
   const handleHover = () => {
     let iterations = 0
     const interval = setInterval(() => {
-      setDisplayed((prev) =>
+      setDisplayed(() =>
         text
           .split("")
           .map((char, i) => {
