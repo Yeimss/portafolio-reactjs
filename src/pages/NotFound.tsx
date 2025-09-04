@@ -12,7 +12,6 @@ const NotFound = () => {
         flex items-center justify-center px-6
       "
     >
-      {/* Glow decorativo */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full blur-3xl opacity-30 bg-purple-300 dark:bg-purple-600" />
         <div className="absolute -bottom-24 -right-24 w-80 h-80 rounded-full blur-3xl opacity-30 bg-pink-300 dark:bg-pink-600" />
