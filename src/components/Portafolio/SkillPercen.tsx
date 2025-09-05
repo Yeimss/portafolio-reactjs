@@ -5,7 +5,6 @@ interface Props{
 }
 
 const SkillPercent = ({ text, percent, color }:Props) => {
-    console.log(color)
     return (
         <div className={`bg-grey-500 w-full rounded-full h-5`}>
             <div

@@ -6,6 +6,7 @@ import sqlIcon from '../../public/sql-database-generic-svgrepo-com.svg'
 import SkillCard from "../components/Portafolio/SkillCard";
 import ScrambleText from "../components/Portafolio/ScrambleText";
 import SkillPercent from "../components/Portafolio/SkillPercen";
+
 const MainSkills = [
     {
         title: ".Net",
@@ -26,9 +27,7 @@ const MainSkills = [
         title: "React",
         description: "Creación de webs y aplicativos movil, creación de hooks personalizados, consumo de APIs",
         image: <Logo className="w-[50px] h-[50px] sping-slow-hover text-blue-500 hover:text-blue-700"></Logo>,
-    },
-];
-
+    }];
 const Lenguajes = [
     {
         text:"C#",
@@ -65,8 +64,7 @@ const Lenguajes = [
         percent:60,
         color:"bg-red-400"
     }]
-
-    const Frameworks = [
+const Frameworks = [
     {
         text:".NET",
         percent:99,
@@ -166,8 +164,6 @@ const Portafolio = () => {
                     </div>
                 </div>
             </section>
-
-            
         </main>
     )
 }
