@@ -5,6 +5,7 @@ import DotNetIcon from '../../public/dot-net-svgrepo-com.svg?react'
 import sqlIcon from '../../public/sql-database-generic-svgrepo-com.svg'
 import SkillCard from "../components/Portafolio/SkillCard";
 import ScrambleText from "../components/Portafolio/ScrambleText";
+import SkillPercent from "../components/Portafolio/SkillPercen";
 const MainSkills = [
     {
         title: ".Net",
@@ -28,12 +29,90 @@ const MainSkills = [
     },
 ];
 
+const Lenguajes = [
+    {
+        text:"C#",
+        percent:99,
+        color:"bg-fuchsia-400"
+    },
+    {
+        text:"JavaScript",
+        percent:90,
+        color:"bg-yellow-400"
+    },
+    {
+        text:"TypeScript",
+        percent:90,
+        color:"bg-blue-400"
+    },
+    {
+        text:"Python",
+        percent:90,
+        color:"bg-blue-400"
+    },
+    {
+        text:"CSS",
+        percent:98,
+        color:"bg-fuchsia-400"
+    },
+    {
+        text:"HTML",
+        percent:100,
+        color:"bg-orange-400"
+    },
+    {
+        text:"Java",
+        percent:60,
+        color:"bg-red-400"
+    }]
+
+    const Frameworks = [
+    {
+        text:".NET",
+        percent:99,
+        color:"bg-indigo-400"
+    },
+    {
+        text:"React",
+        percent:85,
+        color:"bg-sky-400"
+    },
+    {
+        text:"Angular",
+        percent:85,
+        color:"bg-red-400"
+    },
+    {
+        text:"Django",
+        percent:75,
+        color:"bg-green-400"
+    },
+    {
+        text:"Bootstrap",
+        percent:98,
+        color:"bg-fuchsia-400"
+    },
+    {
+        text:"tailwindcss",
+        percent:95,
+        color:"bg-blue-400"
+    },
+    {
+        text:"springboot",
+        percent:50,
+        color:"bg-green-400"
+    },
+    {
+        text:"pandas",
+        percent:75,
+        color:"bg-green-400"
+    }]
+
 const Portafolio = () => {
     const fecha = new Date()
     const bornDate = new Date(2001, 0, 17)
     const diff = (fecha.getTime() - bornDate.getTime())
     const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
-
     return (
         <main>
             <section id="yomero" className="bg-[#FFF8F0] py-16">
@@ -58,10 +137,37 @@ const Portafolio = () => {
             
             <section id="skills" className="bg-[#FFF8F0] py-16 px-4 mt-3">
                 <h3 className="text-3xl font-bold text-center mb-10">Habilidades</h3>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto flex jusfity-between">
-                    {MainSkills.map((element, index) => <SkillCard key={index} image={element.image} title={element.title} description={element.description} />)}
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="text-2xl font-medium text-start mb-10">Main skills:</h2>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto flex jusfity-between">
+                        {MainSkills.map((element, index) => <SkillCard key={index} image={element.image} title={element.title} description={element.description} />)}
+                    </div>
+                </div>
+                <div className="max-w-5xl mx-auto my-5">
+                    <h2 className="text-2xl font-medium text-start mb-10">Lenguajes:</h2>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto flex jusfity-between">
+                        {Lenguajes.map((element, index) => 
+                        <SkillPercent 
+                            key={index} 
+                            text={element.text} 
+                            percent={element.percent}
+                            color={element.color}/>)}
+                    </div>
+                </div>
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="text-2xl font-medium text-start mb-10">Librerías y frameworks:</h2>
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto flex jusfity-between">
+                        {Frameworks.map((element, index) => 
+                        <SkillPercent 
+                            key={index} 
+                            text={element.text} 
+                            percent={element.percent}
+                            color={element.color}/>)}                    
+                    </div>
                 </div>
             </section>
+
+            
         </main>
     )
 }
