@@ -1,8 +1,11 @@
+import GitHubProfile from "../components/Apis/GitHubProfile"
+import GitHubProjects from "../components/Apis/GitHubProjects"
 
 const ConsumingApis = () => {
     return (
         <>
-            <h1>Consuming Apis</h1>
+            <GitHubProfile/>
+            <GitHubProjects/>
         </>
     )
 }
