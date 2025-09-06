@@ -35,14 +35,14 @@ const Layout = () => {
               Portafolio
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/games" className={({ isActive }) => isPathActive(isActive)}>
               Juegos
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/APIs" className={({ isActive }) => isPathActive(isActive)}>
-              APIs
+              Github API
             </NavLink>
           </li>
         </ul>
@@ -78,14 +78,14 @@ const Layout = () => {
                 Portafolio
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/games" className={({ isActive }) => isPathActive(isActive)} onClick={() => setMenuOpen(false)}>
                 Juegos
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/APIs" className={({ isActive }) => isPathActive(isActive)} onClick={() => setMenuOpen(false)}>
-                APIs
+                Github API
               </NavLink>
             </li>
             <li className="flex gap-4 pt-2">

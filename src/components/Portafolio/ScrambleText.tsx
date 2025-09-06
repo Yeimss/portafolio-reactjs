@@ -42,9 +42,9 @@ const ScrambleText = ({ text , title}: { text: string, title:string }) => {
 
   return (
     <div
-      className="flex justify-between"
+      className="flex md:justify-between sm:justify-start"
     >
-        <div className="font-mono text-lg tracking-wide">
+        <div className="font-mono text-lg tracking-wide text-start">
             <label className="font-bold">{title}:</label> {displayed}
         </div>
         <div className="flex items-center">

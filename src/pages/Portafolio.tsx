@@ -31,12 +31,12 @@ const MainSkills = [
 const Lenguajes = [
     {
         text:"C#",
-        percent:99,
+        percent:100,
         color:"bg-fuchsia-400"
     },
     {
         text:"JavaScript",
-        percent:90,
+        percent:95,
         color:"bg-yellow-400"
     },
     {
@@ -61,7 +61,7 @@ const Lenguajes = [
     },
     {
         text:"Java",
-        percent:60,
+        percent:75,
         color:"bg-red-400"
     }]
 const Frameworks = [
