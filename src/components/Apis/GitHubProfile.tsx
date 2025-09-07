@@ -27,12 +27,12 @@ const GitHubProfile = () => {
       <img
         src={user.avatar_url}
         alt={user.name}
-        className="w-32 h-32 rounded-full border-4 border-purple-300 shadow-md mb-4"
+        className="w-32 h-32 rounded-full border-4 border-[#F2CA94] shadow-md mb-4"
       />
-      <h2 className="text-2xl font-bold text-purple-800">{user.name}</h2>
+      <h2 className="text-2xl font-bold text-[#FCB653]">{user.name}</h2>
       <p className="text-gray-600 mb-2">@{user.login}</p>
       <p className="text-sm text-gray-500 italic mb-4">{user.bio || "Sin bio 😅"}</p>
-      <div className="flex gap-4 text-sm text-purple-700 font-medium">
+      <div className="flex gap-4 text-sm text-[#F5BD6E] font-medium">
         <span>👥 {user.followers} seguidores</span>
         <span>➡️ {user.following} siguiendo</span>
       </div>
@@ -40,7 +40,7 @@ const GitHubProfile = () => {
         href={user.html_url}
         target="_blank"
         rel="noreferrer"
-        className="mt-4 inline-block bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+        className="mt-4 inline-block bg-[#FCB653] text-white px-4 py-2 rounded-lg hover:bg-[#F2CA94] transition-colors"
       >
         Ver en GitHub
       </a>
