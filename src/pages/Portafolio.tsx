@@ -32,78 +32,63 @@ const Lenguajes = [
     {
         text:"C#",
         percent:100,
-        color:"bg-fuchsia-400"
     },
     {
         text:"JavaScript",
         percent:95,
-        color:"bg-yellow-400"
     },
     {
         text:"TypeScript",
         percent:90,
-        color:"bg-blue-400"
     },
     {
         text:"Python",
         percent:90,
-        color:"bg-blue-400"
     },
     {
         text:"CSS",
         percent:98,
-        color:"bg-fuchsia-400"
     },
     {
         text:"HTML",
         percent:100,
-        color:"bg-orange-400"
     },
     {
         text:"Java",
         percent:75,
-        color:"bg-red-400"
     }]
 const Frameworks = [
     {
         text:".NET",
         percent:99,
-        color:"bg-indigo-400"
     },
     {
         text:"React",
         percent:85,
-        color:"bg-sky-400"
     },
     {
         text:"Angular",
         percent:85,
-        color:"bg-red-400"
     },
     {
         text:"Django",
         percent:75,
-        color:"bg-green-400"
     },
     {
         text:"Bootstrap",
         percent:98,
-        color:"bg-fuchsia-400"
     },
     {
         text:"tailwindcss",
         percent:95,
-        color:"bg-blue-400"
     },
     {
         text:"springboot",
         percent:50,
-        color:"bg-green-400"
     },
     {
         text:"pandas",
         percent:75,
-        color:"bg-green-400"
     }]
 
 const Portafolio = () => {
@@ -149,7 +134,7 @@ const Portafolio = () => {
                             key={index} 
                             text={element.text} 
                             percent={element.percent}
-                            color={element.color}/>)}
+                            />)}
                     </div>
                 </div>
                 <div className="max-w-5xl mx-auto">
@@ -160,7 +145,7 @@ const Portafolio = () => {
                             key={index} 
                             text={element.text} 
                             percent={element.percent}
-                            color={element.color}/>)}                    
+                            />)}                    
                     </div>
                 </div>
             </section>
